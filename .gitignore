@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.env/
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# SQLite database files
+*.db
+*.sqlite3
+
+# macOS system files
+.DS_Store
+
+# Python testing
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.cache
+
+# Google API credentials
+credentials.json
+token.json
+
+# Output / temp / backup files
+*.bak
+*.tmp
+*.swp
+*~
+
+# PyInstaller output
+dist/
+build/
+*.spec
+
+# Logs and debug dumps
+*.log
+logs/
+
+# If using pipenv or poetry (optional)
+Pipfile.lock
+poetry.lock

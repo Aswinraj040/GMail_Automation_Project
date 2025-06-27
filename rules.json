@@ -1,0 +1,28 @@
+{
+  "all_rules": [
+    {
+      "predicate": "all",
+      "rules": [
+        {
+          "field": "sender",
+          "predicate": "contains",
+          "value": "@happyfox"
+        },
+        {
+          "field": "subject",
+          "predicate": "contains",
+          "value": "Assignment"
+        },
+        {
+          "field": "date",
+          "predicate": "less_than",
+          "value": "2_days"
+        }
+      ],
+      "actions": [
+        "mark_as_read",
+        "move_to:starred"
+      ]
+    }
+  ]
+}
