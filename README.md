@@ -167,7 +167,7 @@ Customize `rules.json` to define your filtering and automation logic.
   - `move_to:<LabelName>`
 
 **📅 Date format for rules:**  
-Use strings like `"2_days"`, `"1_month"`, `"5_days"` etc.
+Use strings like `"2_days"`, `"1_months"`, `"5_days"` etc.
 
 ---
 
