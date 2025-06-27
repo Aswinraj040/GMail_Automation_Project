@@ -44,8 +44,8 @@ A Python-based Gmail automation tool that fetches emails from your inbox and pro
 ### 🧱 Step 3: Clone the GitHub Repository
 
 ```bash
-git clone https://github.com/Aswinraj040/Happyfox_assingment
-cd Happyfox_assingment
+git clone https://github.com/Aswinraj040/Happyfox_assignment
+cd Happyfox_assignment
 ```
 
 #### 💡 Step 3A: Set Up a Python Virtual Environment (Recommended)
