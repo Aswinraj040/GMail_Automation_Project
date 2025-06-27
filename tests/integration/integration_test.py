@@ -103,7 +103,7 @@ class IntegrationTestEmailProcessing(unittest.TestCase):
         # Patch Gmail API mark as read
         mock_service.users().messages().modify.return_value.execute.return_value = {}
         # Patch fetch_emails_from_db to use our DB
-        with patch('process_emails.fetch_emails_from_db', wraps=process_emails.fetch_emails_from_db):
+        with patch('src.process_emails.fetch_emails_from_db', wraps=process_emails.fetch_emails_from_db):
             process_emails.process_emails()
         # Check that mark as read was called
         self.assertTrue(mock_service.users().messages().modify.called)
