@@ -222,7 +222,7 @@ def apply_actions(service, msg_id, actions):
                 label_name = action.split(':', 1)[1].strip()
 
                 # Avoid interfering with Gmail system labels directly
-                if label_name.lower() in ['starred', 'important', 'trash', 'snoozed']:
+                if label_name.lower() in ['starred', 'important', 'trash']:
                     continue
 
                 # Create label if it doesn't exist
@@ -230,11 +230,6 @@ def apply_actions(service, msg_id, actions):
                 add_labels.append(label_id)
                 remove_labels.append('INBOX')
                 #print(f"[ACTION] Preparing to move to label '{label_name}' → Message ID: {msg_id}")
-
-            elif action_lower == 'move_to:snoozed':
-                # Snooze is not currently supported by Gmail API
-                #print(f"[WARNING] Snooze not supported via Gmail API directly. Skipping snooze for message ID: {msg_id}")
-                continue
 
             # If labels need to be added/removed, send modification request
             if add_labels or remove_labels:

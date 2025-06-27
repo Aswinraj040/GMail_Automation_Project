@@ -8,8 +8,6 @@ __pycache__/
 .venv/
 venv/
 ENV/
-env/
-*.env
 
 # SQLite database files
 *.db
